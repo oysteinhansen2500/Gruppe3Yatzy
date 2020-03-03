@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="yatzy.css">
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap^-->
+		<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Permanent+Marker|Righteous" rel="stylesheet">
+		<title>Yatzy</title>
+	</head>
+	<body>
+		  <div class="navbar navbar-dark bg-dark ">
+		  	<a class="navbar-brand mr-5" href="#">Torstein</a>
+		    <ul class="navbar-nav mr-auto navbarTopp">
+		      <li class="nav-item mr-5 ">
+		        <a class="nav-link " href="../index.html">Hjem</a>
+		      </li>
+		      <li class="nav-item mr-5">
+		        <a class="nav-link active" href="#">Yatzy</a>
+		      </li>
+		      <li class="nav-item mr-5">
+		        <a class="nav-link" href="../hangman/hangman.html">Hangman</a>
+		      </li>
+              <li class="nav-item mr-5">
+                <a class="nav-link" href="../valuta/valuta.html">Valutakalkulator</a>
+              </li>    
+		    </ul>
+		  </div>
+		<div class="header">
+			<h1>yazty</h1>
+		</div>
+		<div class="spill">
+			<div id="meldinger"><b><h4> Trykk kast for å starte </h4> </b> <br></div>
+			<button type="button" id="knapp1" name="button" onclick="kast()">Kast</button>
+
+			<div id="rod">
+				<br><h3>Kast om igjen:</h3>
+				<div id="uValgt">
+					<div id="dice0" onclick="javascript: fjernterning(0);"></div>
+					<div id="dice1" onclick="javascript: fjernterning(1);"></div>
+					<div id="dice2" onclick="javascript: fjernterning(2);"></div>
+					<div id="dice3" onclick="javascript: fjernterning(3);"></div>
+					<div id="dice4" onclick="javascript: fjernterning(4);"></div>
+				</div>
+			</div>
+
+			<div id="gronn">
+				<br><h3>Valgte terninger:</h3>
+				<div id="Valgt"></div>
+			</div>
+
+			<br>
+			<div id="tabell">
+				<table>
+					<tr>
+						<td>Enere</td>
+						<td id="enere" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Toere</td>
+						<td id="toere" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Treere</td>
+						<td id="treere" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Firere</td>
+						<td id="firere" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Femmere</td>
+						<td id="femmere" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Seksere</td>
+						<td id="seksere" class="midtstilt"></td>
+					</tr>
+					<tr style="border: 4px solid black;">
+						<td>Sum</td>
+						<td id="enTilSeksSum" class="midtstilt"></td>
+					</tr>
+					<tr style="border: 4px solid black;">
+						<td>Bonus</td>
+						<td id="bonus" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Et par</td>
+						<td id="etPar" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>To par</td>
+						<td id="toPar" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Tre like</td>
+						<td id="treLike" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Fire like</td>
+						<td id="fireLike" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Liten straight</td>
+						<td id="litenStraight" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Stor straight</td>
+						<td id="storStraight" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Hus</td>
+						<td id="hus" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Sjanse</td>
+						<td id="sjanse" class="midtstilt"></td>
+					</tr>
+					<tr>
+						<td>Yatzy</td>
+						<td id="tabellYatzy" class="midtstilt"></td>
+					</tr>
+					<tr style="border: 4px solid black;">
+						<td>Total poengsum</td>
+						<td id="poengsum" class="midtstilt"></td>
+					</tr>
+				</table>
+			</div>
+
+
+
+		<script type="text/javascript" src="yatzy.js"></script>
+
+	</div>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+/* google fonts:
+font-family: 'Righteous', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Fascinate Inline', cursive;
+*/
+body {
+	background-color: #efefef;
+	margin: 0;
+	font-family: 'Righteous', cursive;
+}
+body * {
+
+}
+.header {
+  font-family: 'Permanent Marker', cursive;
+  color: black; 
+  font-size: 40px;
+  padding: 10px 4px;
+  margin: -75px 10px;
+} 
+#gronn *, #rod *, #meldinger *, #knapp1 {
+	margin-left: 10px;
+}
+#knapp1 {
+	/* knapp hentet fra nettet */
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-bottom: 30px;
+}
+#uValgt, #Valgt {
+ 	display: inline-flex;
+  	margin-bottom: 30px;
+  	height: 75px;
+}
+#uValgt img, #Valgt img{
+	padding: 3px;
+	border-radius: 20%;
+}
+#rod, #gronn {
+	width: 28%;
+	border-radius:28px;
+	margin-top: 10px;
+}
+#gronn {
+	background-color: #ccffcc;
+}
+#rod {
+	background-color: #ffb3b3;
+}
+#tabell {
+	position: absolute;
+	top: 10%;
+	right: 5%;
+}
+#tabell * {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td {
+	width: 150px;
+	height: 36px;
+	font-size: 20px;
+}
+.midtstilt {
+	text-align: center;
+}
+
+.navbarTopp{
+	flex-direction: row !important;
+}
+.spill {
+	margin-left: 10px;
+}
